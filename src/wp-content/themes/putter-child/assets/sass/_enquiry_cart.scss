@@ -1,0 +1,141 @@
+/* Wrapper */
+.enquiry-cart-form {
+    margin: 40px 0;
+}
+
+/* Table */
+.enquiry-cart-form table.shop_table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+}
+
+.enquiry-cart-form th,
+.enquiry-cart-form td {
+    padding: 16px;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee;
+}
+
+.enquiry-cart-form thead th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: white;
+    background: var(--e-global-color-primary);
+}
+
+/* Thumbnail */
+.enquiry-cart-form .product-thumbnail img {
+    max-width: 80px;
+    border-radius: 6px;
+}
+
+/* Product name */
+.enquiry-cart-form .product-name {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Quantity */
+.enquiry-cart-form .product-quantity input.qty {
+    width: 80px;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Remove button */
+.enquiry-cart-form .product-remove a.remove {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 50%;
+    background: #f5f5f5;
+    color: #333;
+    font-size: 18px;
+    transition: all .2s ease;
+}
+
+.enquiry-cart-form .product-remove a.remove:hover {
+    background: #e74c3c;
+    color: #fff;
+}
+
+/* Empty state */
+.cart-empty {
+    padding: 40px;
+    background: #fafafa;
+    border: 1px dashed #ddd;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .enquiry-cart-form table,
+    .enquiry-cart-form thead {
+        display: none;
+    }
+
+    .enquiry-cart-form tr {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        padding: 16px;
+    }
+
+    .enquiry-cart-form td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 8px 0;
+    }
+
+    .enquiry-cart-form td::before {
+        content: attr(data-title);
+        font-weight: 600;
+        color: #666;
+    }
+
+    .enquiry-cart-form .product-thumbnail img {
+        max-width: 60px;
+    }
+}
+
+
+.woocommerce-page.sidebar_hide div.product div.summary{
+    margin-bottom: 50px !important;
+}
+
+.enquiry-cart-actions{
+    text-align: right;
+    .enquiry-now-button{
+        padding: 20px 30px;
+        color: white;
+        display: inline-block;
+        margin-top: 50px;
+    }
+}
+
+
+.enquiry-button, .enquiry-now-button{
+    background: var(--e-global-color-accent) !important;
+    font-weight: normal !important;
+    font-size: 17px !important;
+
+    &:hover {
+      background: var(--e-global-color-primary) !important;
+    }
+}
+
+.enquiry-box{
+    .enquiry-qty-input{
+        margin-left: 60px !important;
+        color: black !important;
+    }
+    // margin-left: 60px !important;
+}

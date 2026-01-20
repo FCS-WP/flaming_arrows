@@ -1,14 +1,151 @@
+@import "../lib/slick/slick.css";
+@import "../lib/slick/slick-theme.css";
+@import "enquiry_cart";
+@import "enquiry_checkout";
 #header{
-  .trx_addons_icon-basket, .elementor-widget-trx_sc_layouts_search .search_submit, .elementor-widget-icon a{
-    color: var( --e-global-color-13ed1179 )
+  .sub-menu{
+    a{
+      color: var( --e-global-color-7a1ccbe5 );
+    }
+  }
+    
+}
+
+#header {
+
+  .trx_addons_icon-basket,
+  .elementor-widget-trx_sc_layouts_search .search_submit,
+  .elementor-widget-icon a {
+    color: var(--e-global-color-13ed1179)
   }
 }
 
-#about{
-  .elementor-widget-accordion{
-    .elementor-accordion-item{
+.elementor-widget-trx_sc_button {
+  .sc_button_multiple {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  a {
+    background: var(--e-global-color-accent) !important;
+    font-weight: normal !important;
+    font-size: 17px !important;
+    margin: 0 !important;
+
+    &:hover {
+      background: var(--e-global-color-primary) !important;
+    }
+  }
+}
+
+#hero_slider {}
+
+#foundation {
+  .elementor-widget-image-box {
+    height: 100%;
+
+    .elementor-widget-container {
+      height: 100%;
+    }
+  }
+}
+
+#about {
+  .elementor-widget-accordion {
+    .elementor-accordion-item {
       border-left-width: 0;
       border-right-width: 0;
     }
+  }
+}
+
+
+#coaches {
+  .elementor-widget-image-box {
+    img {
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+}
+
+
+.sidebar_inner {
+  .widget_shopping_cart .widget_product_tag_cloud {
+    display: none;
+  }
+
+  h5 {
+    color: var(--e-global-color-primary) !important
+  }
+
+  ul {
+    &.product-categories {
+
+      a,
+      .count {
+        color: var(--e-global-color-text) !important;
+
+        &:before {
+          color: var(--e-global-color-text)
+        }
+      }
+    }
+  }
+
+  button {
+    &.button {
+      background: var(--e-global-color-accent) !important;
+      font-weight: normal !important;
+      font-size: 17px !important;
+      margin: 0 !important;
+
+      &:hover {
+        background: var(--e-global-color-primary) !important;
+      }
+    }
+  }
+}
+
+.services_page_featured{
+  display: none !important;
+}
+
+#git-form{
+  select{
+    background-color: #5B595A45 !important;
+    border-width: 0px 0px 0px 0px !important;
+    option{
+      color: black;
+    }
+  }
+}
+
+#gg_map{
+  iframe{
+    height: 450px !important;
+  }
+}
+
+.woocommerce div.product .product_title, .woocommerce div.product .product_meta span, .woocommerce ul.products li.product .post_header a{
+  color : var( --e-global-color-7a1ccbe5 ) !important;
+}
+
+.related.products{
+  .button{
+    display: none !important;
+  }
+}
+
+
+.products {
+  .button.product_type_simple{
+    display: none !important;
   }
 }
